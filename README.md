@@ -411,202 +411,131 @@ p: 15px;
         .botao{
             display: inline-block;
             margin-to
-/* =============================================
-   STYLE.CSS - AGRINHO 2026
-   Tema: Agricultura, Educação e Sustentabilidade
-   Responsivo | Moderno | Acessível
-   ============================================= */
-
-/* ====================== RESET & BASE ====================== */
+/* Reset e configurações base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    /* Cores do Tema Agrinho 2026 */
-    --primary-green: #2E7D32;
-    --secondary-green: #4CAF50;
-    --light-green: #A5D6A7;
-    --accent-yellow: #FFEB3B;
-    --dark-green: #1B5E20;
-    --text-dark: #263238;
-    --text-light: #F1F8E9;
-    --background: #F8FFF8;
-    --white: #FFFFFF;
-    --gray: #757575;
-}
-
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--background);
-    overflow-x: hidden;
+    color: #333;
+    background-color: #f8f9fa;
 }
 
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Container principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ====================== TIPOGRAFIA ====================== */
-h1, h2, h3, h4 {
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--dark-green);
-}
-
-h1 {
-    font-size: 2.8rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-}
-
-p {
-    font-size: 1.1rem;
-    color: var(--gray);
-}
-
-/* ====================== HEADER ====================== */
+/* Header / Navegação */
 header {
-    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
-    color: white;
-    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     font-size: 1.8rem;
     font-weight: 800;
+    color: #007bff;
     text-decoration: none;
-    color: white;
 }
 
-.logo img {
-    height: 50px;
-}
-
-.menu {
+.nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
-.menu a {
-    color: white;
+.nav-links a {
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.menu a:hover {
-    color: var(--accent-yellow);
-    transform: translateY(-2px);
+.nav-links a:hover {
+    color: #007bff;
 }
 
-/* ====================== BOTÕES ====================== */
+/* Botões */
 .btn {
     display: inline-block;
     padding: 12px 28px;
     border-radius: 50px;
-    font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s;
-    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
 }
 
 .btn-primary {
-    background-color: var(--secondary-green);
+    background-color: #007bff;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: var(--dark-green);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(46, 125, 50, 0.3);
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-/* ====================== HERO / BANNER ====================== */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero-agro.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 160px 20px 100px;
-}
-
-.hero h1 {
-    color: white;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* ====================== RESPONSIVIDADE ====================== */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    .menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: var(--primary-green);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.4s;
-    }
-    
-    .menu.active {
-        left: 0;
-    }
-    
-    .hero {
-        padding: 120px 20px 80px;
-    }
-}
-
-/* ====================== UTILITÁRIOS ====================== */
-.text-center {
-    text-align: center;
-}
-
-.mt-5 { margin-top: 3rem; }
-.mb-5 { margin-bottom: 3rem; }
-
+/* Seções gerais */
 section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
-/* ====================== FOOTER ====================== */
-footer {
-    background: var(--dark-green);
-    color: var(--text-light);
-    padding: 60px 0 30px;
+.section-title {
     text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
 }
 
-footer a {
-    color: var(--light-green);
-    text-decoration: none;
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Será controlado por JavaScript para menu mobile */
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 70px 0;
+    }
 }
+
+/* Cores do tema */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --dark-color: #343a40;
+    --light-color:
