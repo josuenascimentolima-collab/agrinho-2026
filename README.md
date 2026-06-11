@@ -411,3 +411,202 @@ p: 15px;
         .botao{
             display: inline-block;
             margin-to
+/* =============================================
+   STYLE.CSS - AGRINHO 2026
+   Tema: Agricultura, Educação e Sustentabilidade
+   Responsivo | Moderno | Acessível
+   ============================================= */
+
+/* ====================== RESET & BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores do Tema Agrinho 2026 */
+    --primary-green: #2E7D32;
+    --secondary-green: #4CAF50;
+    --light-green: #A5D6A7;
+    --accent-yellow: #FFEB3B;
+    --dark-green: #1B5E20;
+    --text-dark: #263238;
+    --text-light: #F1F8E9;
+    --background: #F8FFF8;
+    --white: #FFFFFF;
+    --gray: #757575;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ====================== TIPOGRAFIA ====================== */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--dark-green);
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--gray);
+}
+
+/* ====================== HEADER ====================== */
+header {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    color: var(--accent-yellow);
+    transform: translateY(-2px);
+}
+
+/* ====================== BOTÕES ====================== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--secondary-green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(46, 125, 50, 0.3);
+}
+
+/* ====================== HERO / BANNER ====================== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero-agro.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 160px 20px 100px;
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ====================== RESPONSIVIDADE ====================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--primary-green);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    
+    .menu.active {
+        left: 0;
+    }
+    
+    .hero {
+        padding: 120px 20px 80px;
+    }
+}
+
+/* ====================== UTILITÁRIOS ====================== */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 { margin-top: 3rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+section {
+    padding: 80px 0;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    background: var(--dark-green);
+    color: var(--text-light);
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--light-green);
+    text-decoration: none;
+}
