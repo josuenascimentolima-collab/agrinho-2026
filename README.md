@@ -567,3 +567,8 @@ section {
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+<img width="784" height="1168" alt="image" src="https://github.com/user-attachments/assets/8c9e423d-a36f-4495-8d1d-345fc347b35c" />
