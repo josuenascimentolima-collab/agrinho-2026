@@ -538,4 +538,32 @@ section {
     --success-color: #28a745;
     --danger-color: #dc3545;
     --dark-color: #343a40;
-    --light-color:
+    --light-col
+
+
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Imagens IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site Desenvolvido com IA</h1>
+        <p>Exemplo de integração de imagens geradas por Inteligência Artificial</p>
+    </header>
+    <main>
+        <section>
+            <h2>Imagem Gerada por IA 1</h2>
+            <img id="img1" src="assets/image1.jpg" alt="Imagem IA 1 - Paisagem Futurista" style="max-width: 100%; height: auto;">
+        </section>
+        <section>
+            <h2>Imagem Gerada por IA 2</h2>
+            <img id="img2" src="assets/image2.jpg" alt="Imagem IA 2 - Personagem Digital" style="max-width: 100%; height: auto;">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
